@@ -22,7 +22,7 @@ public struct VerbalExpressions {
     // computed properties
     var pattern: String { return prefixes + source + suffixes }
 
-    var regularExpression: NSRegularExpression! {
+    public var regularExpression: NSRegularExpression {
         return try! NSRegularExpression(pattern: pattern, options: options)
     }
     
